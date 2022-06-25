@@ -1,6 +1,7 @@
 console.log("Hello Ugurcan");
 
 // JS Type safe değildir
+
 let dolarBugun = 9.30
 
 let dolarDun = 9.20
@@ -27,7 +28,7 @@ console.log(konutKredileri)
 
 console.log("<ul>")
 for (let i = 0; i < konutKredileri.length; i++) {
-    const item = `<li>${konutKredileri[i]}</li>` ;
+    const item = `<li>${konutKredileri[i]}</li>`;
     console.log(item)
 }
 
