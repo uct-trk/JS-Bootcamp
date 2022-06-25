@@ -1,36 +1,34 @@
-console.log("Merhaba Kodlama.io")
+console.log("Hello Ugurcan");
 
-//JS type safe değildir
+// JS Type safe değildir
 let dolarBugun = 9.30
 
 let dolarDun = 9.20
-dolarDun = "9.20"
 {
-    let dolarDun = 9.10
+    let dolarDun1 = 9.50
+    {
+        console.log(dolarBugun + " bugun")
+        console.log(dolarDun1)
+    }
 }
-
 console.log(dolarDun)
 
-const euroDun = 11.2
-//euroDun = 11
 
+const euroDun = 20
+//euroDun = 22; consta tekrar değer atayamayız
 console.log(euroDun)
 
-//array
-//camelCasing
-//PascalCasing
-let konutKredileri = ["Konut kredisi","Emlak Konut Kredisi","Kamu Konut Kredisi","Özel Konut Kredisi"]
+// birden fazla veriyi aynı değişkende kullanmak için arraylerden yararlanıyoruz
+let konutKredileri = ["Konut kredisi", "Emlak konut kredisi", "Kamu konut kredisi", ["a", "b", "c"], 27]
+console.log(konutKredileri)
+
+// gerçekte verileri apilerden çekeriz
+//let users = getUsersFromApi();
 
 console.log("<ul>")
-for(let i = 0;i<konutKredileri.length;i++){
-    console.log("<li>"+konutKredileri[i]+"</li>")
+for (let i = 0; i < konutKredileri.length; i++) {
+    const item = `<li>${konutKredileri[i]}</li>` ;
+    console.log(item)
 }
+
 console.log("</ul>")
-
-{/* <ul>
-    <li>Konut kredisi</li>
-    <li>Emlak Konut Kredisi</li>
-    <li>Kamu Konut Kredisi</li>
-</ul> */}
-
-console.log(konutKredileri)
