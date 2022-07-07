@@ -91,3 +91,4 @@ const x = Object.create(personel)
 // boş gözükür ama personel propertyleri miras alır
 console.log(x)
 console.log(x.__proto__)
+
